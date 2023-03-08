@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+.header-btn-left.MuiButtonBase-root{
+    border: 1px solid #3f51b5;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: 10px;
+    padding: 5px 20px;
+    color: #3f51b5;
+}
+.header-btn-left.MuiButtonBase-root:hover{
+    background-color: #3f51b5;
+    color: white;
+}
+.header-btn-right.MuiButtonBase-root:hover{
+    background-color: #3f51b5;
+    color: white;
+}
+.header-btn-right.MuiButtonBase-root{
+    border: 1px solid #3f51b5;
+    border-radius: 0px 20px 20px 0px;
+    padding: 5px 20px;
+    color: #3f51b5;
+}
+.home-main{
+    margin: 20px;
+    margin-top: 70px;
+    display: flex;
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+    width: 40%;
+}
+.home-content-buttons button{
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.videoBtn.MuiButtonBase-root{
+    padding: 5px 40px;
+    border-radius: 25px;
+}
+.home-buttons.MuiButtonBase-root{
+    color: white;
+    background-color: #3f51b5;
+    padding: 12px;
+}
+.works-main{
+    margin: 20px;
+    margin-top: 50px;
+    display: flex;
+    
+}
+.work-features{
+    margin: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+.cardsIndividual{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardsIndividual > *{
+    box-shadow: none;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.service-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.service-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+.service-donelist{
+    display:flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.service-donelist > *{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.doneIcon.css-i4bv87-MuiSvgIcon-root{
+    color: #3f51b5;
+    margin-right: 5px;
+}
+.features-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+.features-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.css-zqcytf-MuiButtonGroup-root .MuiButtonGroup-grouped{
+    background-color: rgba(128, 128, 128, 0.374);
+    color: black;
+    border-radius: 5px;
+    border-color: none ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.features-buttongroup{
+    height: 20vh;
+    display: flex;
+    align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.features-app{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pricingCard-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    row-gap: 25px;
+    width: 17%;
+    box-shadow: 1px 2px 5px;
+    border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.pricingCard-top{
+    display: flex;
+    width:70%;
+    justify-content: space-between;
+    align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pricing-in{
+    display: flex;
+    align-items: center;
+}
+.pricing-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.pricing-content > *{
+    display: flex;
+    align-items: center;
+}
+.pricingList-Individual{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.pricing-main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+.pricing-heaidng{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
