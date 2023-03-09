@@ -1,14 +1,21 @@
 import { Button, Divider, Typography } from '@mui/material'
 import { Box } from '@mui/system'
-import React from 'react'
+import React, { useState } from 'react'
 import DoneIcon from '@mui/icons-material/Done';
 
 
 const PricingCard = ({image,title,price}) => {
+    const [iscolor, setIscolor] = useState(false)
+    const colorFull = () =>{
+        setIscolor(true)
+    }
+    const colorLess = () =>{
+        setIscolor(false)
+    }
   return (
-        <Box className="pricingCard-main">
+        <Box className="pricingCard-main"  onMouseEnter={colorFull} onMouseLeave={colorLess}>
             <Box className="pricingCard-top">
-                <img src={image} alt="img" width="60px" height="60px" />
+                <img src={image} alt="img" width="60px" height="60px" className={iscolor?'colorClass':'normalClass'}/>
                 <Box>
                     <Typography variant='h6' sx={{color:"#3f51b5"}}>{title}</Typography>
                     <Typography variant='body2' className='pricing-in'>$<Typography variant='h6' sx={{color:"#3f51b5"}}>{price}</Typography>/mo</Typography>
