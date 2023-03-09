@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 import CardX from '../commonComponents/Card'
@@ -41,7 +41,7 @@ const Works = () => {
 
     ]
   return (
-    <div>
+    <Container id="worksNav">
         <Box className="works-main">
             <Box className="work-features">
                 <Typography variant='h3'>App Features</Typography>
@@ -60,7 +60,7 @@ const Works = () => {
             </Box>
 
         </Box>
-    </div>
+    </Container>
   )
 }
 

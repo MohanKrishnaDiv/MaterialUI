@@ -1,5 +1,7 @@
 import './App.css';
+import Customers from './components/Customers';
 import Features from './components/Features';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import Pricing from './components/Pricing';
@@ -16,6 +18,8 @@ function App() {
       <Service/>
       <Features/>
       <Pricing/>
+      <Customers/>
+      <Footer/>
     </div>
   );
 }

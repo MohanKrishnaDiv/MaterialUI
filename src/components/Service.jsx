@@ -6,7 +6,7 @@ import DoneIcon from '@mui/icons-material/Done';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const Service = () => {
   return (
-    <div className='service-main'>
+    <div className='service-main' id='serviceNav'>
         <Box className="service-image">
             <img src={mobile3} alt="mobile3" />
         </Box>

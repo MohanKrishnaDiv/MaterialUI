@@ -10,7 +10,34 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Demo', 'Home', 'Works','Service','Pricing','Contact'];
+// const pages = ['Demo', 'Home', 'Works','Service','Pricing','Contact'];
+const pages = [
+  {
+    component:'Demo',
+    id:'#demo'
+  },
+  {
+    component:'Home',
+    id:'#homeNav'
+  },
+  {
+    component:'Works',
+    id:'#worksNav'
+  },
+  {
+    component:'Service',
+    id:'#serviceNav'
+  },
+  {
+    component:'Pricing',
+    id:'#pricingNav'
+  },
+  {
+    component:'Contact',
+    id:'#contactNav'
+  }
+
+]
 
 
 function Header() {
@@ -81,7 +108,7 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" color="black">{page}</Typography>
+                  <Typography textAlign="center" color="black">{page.component}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -109,10 +136,11 @@ function Header() {
             {pages.map((page) => (
               <Button
                 key={page}
+                href={page.id}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
-                {page}
+                {page.component}
               </Button>
             ))}
           </Box>

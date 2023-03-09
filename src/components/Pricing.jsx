@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 import PricingCard from '../commonComponents/PricingCard'
@@ -32,7 +32,7 @@ const Pricing = () => {
     }
   ]
   return (
-    <div>
+    <Container id="pricingNav">
       <Box className="pricing-main">
         <Box className="pricing-heaidng">
             <Typography variant='h3'>Our Services</Typography>
@@ -46,7 +46,7 @@ const Pricing = () => {
             }
         </Box>
       </Box>
-    </div>
+    </Container>
   )
 }
 
