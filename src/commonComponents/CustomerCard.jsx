@@ -13,8 +13,8 @@ const CustomerCard = ({image,Title,role}) => {
     }
 
   return (
-    <Container className="CC-main" onMouseEnter={fillingColor} onMouseLeave={removingColor}>
-      <fieldset className='CC-fieldset'>
+    <Container className="CC-main" >
+      <fieldset className='CC-fieldset' onMouseEnter={fillingColor} onMouseLeave={removingColor}>
         <legend><img src={image} alt="profile" height={100} style={{borderRadius:"100%"}} className={isColored?'imgbg':'imgbg2'}/></legend>
         <Typography variant='body2' color={'GrayText'}>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."</Typography>
         <Divider/>

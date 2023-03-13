@@ -18,7 +18,7 @@ const Service = () => {
                 <Typography variant='body2' width="600px" color="GrayText"><DoneIcon className='doneIcon'/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</Typography>
                 <Typography variant='body2' width="600px" color="GrayText"><DoneIcon className='doneIcon'/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</Typography>
             </Box>
-            <Button variant='text'>Click to view more<ArrowForwardIosIcon/></Button>
+            <Button variant='text' sx={{color:"#3f51b5"}}>Click to view more<ArrowForwardIosIcon/></Button>
         </Box>
       
     </div>

@@ -4,6 +4,9 @@ import React from 'react'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import EmailIcon from '@mui/icons-material/Email';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
   return (
     <Box className="footer-main" id="contactNav">
@@ -14,9 +17,9 @@ const Footer = () => {
             <Typography variant='body2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis perferendis rem, aut aliquam neque nam? dolor sit amet, consectetur adipisicing elit consectetur adipisicing.</Typography>
             <div className='aboutus-icons'>
                 <TwitterIcon sx={{height:"20px",width:"20px",color:"white"}}/>
-                <TwitterIcon sx={{height:"20px",width:"20px",color:"white"}}/>
-                <TwitterIcon sx={{height:"20px",width:"20px",color:"white"}}/>
-                <TwitterIcon sx={{height:"20px",width:"20px",color:"white"}}/>
+                <FacebookOutlinedIcon sx={{height:"20px",width:"20px",color:"white"}}/>
+                <InstagramIcon sx={{height:"20px",width:"20px",color:"white"}}/>
+                <LinkedInIcon sx={{height:"20px",width:"20px",color:"white"}}/>
             </div>
         </Box>
         <Box className="footer-company footer-common">

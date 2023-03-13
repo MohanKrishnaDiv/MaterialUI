@@ -45,17 +45,20 @@ const Customers = () => {
               ))
             }
         </Box>
-        <Box className='customer-download'>
-            <Box className="pricing-heaidng">
-                <Typography variant='h3'>Download Now!</Typography>
-                <Typography variant='body2' width="500px" color="GrayText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua..</Typography>      
+        <div className='xcq'>
+          <div className='grayleft'></div>
+            <Box className='customer-download'>        
+                <Box className="pricing-heaidng">
+                    <Typography variant='h3'>Download Now!</Typography>
+                    <Typography variant='body2' width="500px" color="GrayText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua..</Typography>      
+                </Box>
+                <Box className="home-content-buttons customer-btns">
+                    <Button variant='contained' className='home-buttons'><AndroidIcon/> Play Store</Button>
+                    <Button variant='contained' className='home-buttons'><AppleIcon/> App Store</Button>
+                </Box>
             </Box>
-            <Box className="home-content-buttons customer-btns">
-                <Button variant='contained' className='home-buttons'><AndroidIcon/> Play Store</Button>
-                <Button variant='contained' className='home-buttons'><AppleIcon/> App Store</Button>
-            </Box>
-
-        </Box>
+            <div className='grayright'></div>
+        </div>
     </Container>
   )
 }

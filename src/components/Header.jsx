@@ -9,8 +9,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import {ThemeContexts} from '../App'
+import { Switch } from '@mui/material';
 
-// const pages = ['Demo', 'Home', 'Works','Service','Pricing','Contact'];
 const pages = [
   {
     component:'Demo',
@@ -42,6 +43,8 @@ const pages = [
 
 function Header() {
 
+  const {theme,toggleTheme} = React.useContext(ThemeContexts)
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -52,13 +55,12 @@ function Header() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  
 
   return (
-    <AppBar position="sticky" sx={{'backgroundColor':'white' ,'color':'black'}}>
+    <AppBar position="sticky" sx={{'backgroundColor':'white' ,'color':'black'}} className="header-main" id={theme}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -146,8 +148,12 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
+          
+          <Switch onChange={toggleTheme}/>
           <Button color="inherit" className='header-btn-left'>Login</Button>
           <Button color="inherit" className='header-btn-right'>SignUp</Button>
+
+
           </Box>
         </Toolbar>
       </Container>

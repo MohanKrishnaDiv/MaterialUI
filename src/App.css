@@ -240,6 +240,8 @@
 }
 .footer-common > *{
     display: flex;
+    align-items: center;
+    gap: 5px;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
@@ -265,9 +267,11 @@
 }
 .colorClass{
     filter: grayscale(0%);
+    border-radius: 100%;
 }
 .normalClass{
     filter: grayscale(100%);
+    border-radius: 100%;
 }
 .imgbg{
     border: #3f51b5 2px solid;
@@ -278,4 +282,36 @@
 }
 .iconcolor{
     color: #3f51b5;
+}
+.features-buttongroup.css-zqcytf-MuiButtonGroup-root .MuiButtonGroup-grouped:not(:last-of-type){
+    border-color: none;
+}
+.xcq{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.grayleft{
+    background-color: #4352631d;
+    width: 30%;
+    height: 200px;
+    border-radius: 0px 100px 100px 0px;
+}
+.grayright{
+    background-color: #4352631d;
+    width: 30%;
+    height: 200px;
+    border-radius: 100px 0px 0px 100px;
+}
+
+
+/* CSS for dark theme */
+
+#dark{
+    background-color: rgba(234, 169, 169, 0.379);
+    color: #351F39;
+}
+#dark .header-main{
+    background-color: rgb(226, 178, 227);
 }

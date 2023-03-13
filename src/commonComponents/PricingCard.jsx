@@ -18,7 +18,7 @@ const PricingCard = ({image,title,price}) => {
                 <img src={image} alt="img" width="60px" height="60px" className={iscolor?'colorClass':'normalClass'}/>
                 <Box>
                     <Typography variant='h6' sx={{color:"#3f51b5"}}>{title}</Typography>
-                    <Typography variant='body2' className='pricing-in'>$<Typography variant='h6' sx={{color:"#3f51b5"}}>{price}</Typography>/mo</Typography>
+                    <Typography variant='body2' className='pricing-in' >$<Typography variant='h6' sx={{color:"#3f51b5"}}>{price}</Typography>/mo</Typography>
                 </Box>
             </Box>
             <Divider sx={{color:"#3f51b5" ,border:"1px solid",width:"100%"}}/>

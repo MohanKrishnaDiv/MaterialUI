@@ -1,10 +1,11 @@
 import { CardActionArea, CardContent,  Typography,Card } from '@mui/material'
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { ThemeContexts } from '../App'
 
 const CardX = ({image,heading}) => {
+  const {theme} = useContext(ThemeContexts)
   return (
-    <Card sx={{ maxWidth: 220, maxHeight:250 , boxShadow:0}}>
+    <Card sx={{ maxWidth: 220, maxHeight:250 , boxShadow:0}} id={theme}>
       <CardActionArea>
         <img src={image} alt="img" height={80}/>
         <CardContent>

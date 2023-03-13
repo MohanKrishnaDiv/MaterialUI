@@ -14,11 +14,11 @@ const Features = () => {
                     <Typography variant='h3'>App Features</Typography>
                     <Typography variant='body2' width="500px" color="GrayText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nemo exercitationem tenetur alias distinctio. Fugiat nam ab consequatur illo voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum quidem adipisci laudantium, aut sunt? Sit reiciendis aperiam quidem maiores.</Typography>
                 </Box>
-                <Box className="features-buttongroup">
-                    <ButtonGroup variant="contained" aria-label="outlined primary button group" className='button-grp'>
-                        <Button>Community</Button>
-                        <Button>Self Service</Button>
-                        <Button>Teamwork</Button>
+                <Box className="features-buttongroup" >
+                    <ButtonGroup variant="contained" aria-label="outlined primary button group" className='button-grp' >
+                        <Button className='btngrp-btns'>Community</Button>
+                        <Button className='btngrp-btns'>Self Service</Button>
+                        <Button className='btngrp-btns'>Teamwork</Button>
                     </ButtonGroup>
                 </Box>
                 <Box className="service-content">
@@ -29,7 +29,7 @@ const Features = () => {
                         <Typography variant='body2' width="600px" color="GrayText"><DoneIcon className='doneIcon'/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</Typography>
                         <Typography variant='body2' width="600px" color="GrayText"><DoneIcon className='doneIcon'/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</Typography>
                     </Box>
-                    <Button variant='text'>Click to view more<ArrowForwardIosIcon/></Button>
+                    <Button variant='text' sx={{color:"#3f51b5"}}>Click to view more<ArrowForwardIosIcon/></Button>
                  </Box>
             </Box>
             <Box className="features-img">

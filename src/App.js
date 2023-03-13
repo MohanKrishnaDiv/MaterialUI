@@ -7,11 +7,20 @@ import Home from './components/Home';
 import Pricing from './components/Pricing';
 import Service from './components/Service';
 import Works from './components/Works';
-
+import { createContext, useState } from 'react';
+  
+export const ThemeContexts = createContext()
 
 function App() {
+  const [theme, setTheme] = useState('light');
+  const toggleTheme = () =>{
+    setTheme((val) => (val === 'light' ? 'dark' : 'light'));
+    console.log('hi',theme)
+  }
+
   return (
-    <div className="App">
+    <ThemeContexts.Provider value={{theme,toggleTheme}}>
+    <div className="App" id={theme}>    
       <Header/>
       <Home/>
       <Works/>
@@ -21,6 +30,7 @@ function App() {
       <Customers/>
       <Footer/>
     </div>
+    </ThemeContexts.Provider>
   );
 }
 
